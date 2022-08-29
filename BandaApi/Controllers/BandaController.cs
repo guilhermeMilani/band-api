@@ -10,6 +10,11 @@ namespace BandaApi.Controllers
     {
         private BandaRepository bandaRepository;
 
+        public BandaController()
+        {
+            this.bandaRepository = new BandaRepository();
+        }
+
         [HttpGet]
         public List<Banda> Get()
         {

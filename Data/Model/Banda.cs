@@ -12,5 +12,6 @@ namespace Data.Model
         public string Genero { get; set; }
         public int NumMembers { get; set; }
         public int YearFundation { get; set; }
+        public List<String> Members { get; set; }
     }
 }

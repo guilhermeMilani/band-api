@@ -1,4 +1,5 @@
-﻿using Microsoft.EntityFrameworkCore.Migrations;
+﻿using System.Collections.Generic;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 
 #nullable disable
@@ -18,7 +19,8 @@ namespace Data.Migrations
                     Name = table.Column<string>(type: "text", nullable: false),
                     Genero = table.Column<string>(type: "text", nullable: false),
                     NumMembers = table.Column<int>(type: "integer", nullable: false),
-                    YearFundation = table.Column<int>(type: "integer", nullable: false)
+                    YearFundation = table.Column<int>(type: "integer", nullable: false),
+                    Members = table.Column<List<string>>(type: "text[]", nullable: false)
                 },
                 constraints: table =>
                 {
